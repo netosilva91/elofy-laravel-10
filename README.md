@@ -1,16 +1,17 @@
-
 # Laravel 10 com PHP 8.1
 
 ### Passo a passo
 
 Crie o Arquivo .env
+
 ```sh
 cp .env.example .env
 ```
 
 Atualize as variáveis de ambiente do arquivo .env
+
 ```dosini
-APP_NAME=EspecializaTi
+APP_NAME=AppLaravel
 APP_URL=http://localhost:8989
 
 DB_CONNECTION=mysql
@@ -30,28 +31,28 @@ REDIS_PORT=6379
 ```
 
 Suba os containers do projeto
+
 ```sh
 docker-compose up -d
 ```
 
-
 Acesse o container app
+
 ```sh
 docker-compose exec app bash
 ```
 
-
 Instale as dependências do projeto
+
 ```sh
 composer install
 ```
 
-
 Gere a key do projeto Laravel
+
 ```sh
 php artisan key:generate
 ```
-
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
