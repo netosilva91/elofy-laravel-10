@@ -6,8 +6,9 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class UserResource extends JsonResource
+class LoginResource extends JsonResource
 {
+
     /**
      * Transform the resource into an array.
      *
@@ -20,6 +21,7 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             'type' => $this->type,
+            'token' => $this->token,
         ];
     }
 }
