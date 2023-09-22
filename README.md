@@ -56,3 +56,13 @@ php artisan key:generate
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
+
+API Teste PHP
+Exemplos de uso da api do teste PHP.
+
+```sh
+importar no postman o arquivo '/collections/Teste PHP Elofy.postman_collection.json'
+
+Será necessário criar os usuários (types de usuários permitidos são manager e employee) para conseguir realizar os testes
+OBS: a Route de criar usuário deixei publica para fins de testes.
+```
