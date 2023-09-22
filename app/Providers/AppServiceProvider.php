@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Repositories\{
+    FeedbackEloquentORM,
+    FeedbackRepositoryInterface,
     SupportEloquentORM,
     SupportRepositoryInterface,
 };
@@ -18,6 +20,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             SupportRepositoryInterface::class,
             SupportEloquentORM::class
+        );
+
+        $this->app->bind(
+            FeedbackRepositoryInterface::class,
+            FeedbackEloquentORM::class
         );
     }
 
